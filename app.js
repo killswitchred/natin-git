@@ -32,16 +32,16 @@ function renderTodo(todo) {
   }
 }
 
-// function addTodo(text) {
-//   const todo = {
-//     text,
-//     checked: false,
-//     id: Date.now(),
-//   };
+function addTodo(text) {
+  const todo = {
+    text,
+    checked: false,
+    id: Date.now(),
+  };
 
-//   todoItems.push(todo);
-//   renderTodo(todo);
-// }
+  todoItems.push(todo);
+  renderTodo(todo);
+}
 
 function toggleDone(key) {
   const index = todoItems.findIndex(item => item.id === Number(key));
